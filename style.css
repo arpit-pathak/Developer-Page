@@ -1,0 +1,376 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+:root {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 0.2px solid; */
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+/* Header Starts +++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+header {
+  background-color: #4617FE;
+  color: white;
+  position: relative;
+  padding: 0 4rem;
+}
+
+/* Nav starts */
+nav {
+  height: 8vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2.5rem;
+  padding-top: 2rem;
+  font-size: 14px;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+/* nav button  */
+.nav-item-active {
+  background-color: #fff;
+  color: #4617FE;
+  padding: 4px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* search bar img svg  */
+nav svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* logo  */
+.logo {}
+
+/* text  */
+.header-text {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.header-text h2 {
+  font-size: 2.8rem;
+
+}
+
+.header-text img {}
+
+.header-image {
+  position: absolute;
+  width: 700px;
+  top: 90px;
+  right: 0px;
+  ;
+}
+
+/* companies  +++++++++++++++++++++++++++++++++++++++++++++++++*/
+.companies {
+  display: flex;
+  gap: 4rem;
+  margin: 2rem 5rem;
+}
+
+.company-items {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.7rem;
+  font-family: "Righteous";
+}
+
+/* api section +++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.api {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: 4rem auto;
+}
+
+.api-heading {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+/* card cards container  */
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 300px;
+  margin: 2rem 0;
+  position: relative;
+}
+
+/* card  */
+.card,
+.card-active {
+  padding: 40px 20px;
+  border-radius: 10px;
+  height: 270px;
+  background-color: transparent;
+}
+
+/* active card  */
+.card-active {
+  box-shadow: 1px 0 10px 1px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+
+/* card logos  */
+.card-logo {
+  padding: 10px 0;
+}
+
+.card-head-active {
+  color: #4617FE;
+}
+
+/* arrow logo  */
+.card:last-child::after {
+  content: ">";
+  position: absolute;
+  background-color: #4617fe;
+  font-size: 3rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 110px;
+  right: 10px;
+}
+
+/* blog section ================================= */
+
+.blog-heading {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.blog-heading h1 {
+  font-size: 3rem;
+}
+
+.blog-cards {
+  max-width: 90vw;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.blog-card {
+  background-color: #FFFFFF;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.262);
+  height: 287px;
+  display: flex;
+  position: relative;
+}
+
+.blog-content {
+
+  padding: 30px 50px;
+}
+
+.blog-content h6 {
+  color: #4518f8;
+  font-weight: 900;
+}
+
+.blog-content h3 {
+  font-weight: 900;
+  margin: 12px 0;
+}
+
+.blog-content small {
+  font-weight: 700;
+}
+
+.blog-bottom {
+  position: absolute;
+  bottom: -22px;
+  right: 160px;
+}
+
+.blog-card-bottom-image {
+  border: 3px solid white;
+  background-color: white;
+  border-radius: 50%;
+
+}
+
+div.blog-author {
+  position: absolute;
+  bottom: 10px;
+  right: 40px;
+  font-size: 12px;
+}
+
+/* faq section ++++++++++++++++++++++++++++++++++++++++++++++++ */
+.faq-section {
+  display: flex;
+  justify-content: space-between;
+  background: #dee4fd;
+  margin: 5rem 0;
+}
+
+.faq-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 0 4rem;
+}
+
+.faq-content h2 {
+  font-size: 3rem;
+}
+
+.faq-content h4 {
+  font-size: 14px;
+}
+
+.faq-content :nth-child(3) {
+  font-size: 1rem;
+}
+
+.faq-content button {
+  background-color: #4518f8;
+  border: none;
+  color: #ffff;
+  padding: 9px 20px;
+  border-radius: 5px;
+}
+
+.faq-image img {
+  height: 380px;
+}
+
+/* download section ++++++++++++++++++++++++++++++++ */
+
+.download-section {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  height: 20vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download-content span {
+  font-weight: 100;
+}
+
+.download-email form input {
+  outline: none;
+  border: none;
+  background-color: #dee4fd;
+  padding: 15px 180px 15px 40px;
+  border-radius: 50px;
+  width: 500px;
+}
+
+.download-email form input::placeholder {
+  color: black;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.download-email form button {
+  position: relative;
+  right: 40px;
+  background-color: #4518f8;
+  color: #FFF;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* footer section +++++++++++ */
+.footer-section {
+
+  background-color: #4518f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15rem;
+  padding: 0 5rem;
+}
+
+/* left footer  */
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  margin: 20px 0;
+}
+
+.list-items {
+  color: #fff;
+  list-style: none;
+  font-size: 12px;
+  position: relative;
+}
+
+
+/* right footer  */
+
+/* right footer icons  */
+.footer-logos {
+  padding: 5px;
+}
+
+.logos-list {
+  display: flex;
+  gap: 1.2rem;
+  margin: 15px 0;
+}
+
+.list-items::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 10px;
+  background-color: white;
+  top: 5px;
+  right: -10px;
+}
+
+/* for all last list items  */
+.list-items:last-child::after {
+  display: none;
+}
+
+/* for first item of list left */
+.list .list-items:first-child::after {
+  display: none;
+}
