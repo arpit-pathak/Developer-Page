@@ -67,6 +67,7 @@ nav svg {
   justify-content: center;
   align-items: flex-start;
   gap: 1rem;
+  width: 50%;
 }
 
 .header-text h2 {
@@ -74,11 +75,9 @@ nav svg {
 
 }
 
-.header-text img {}
-
 .header-image {
   position: absolute;
-  width: 700px;
+  width: 680px;
   top: 90px;
   right: 0px;
   ;
@@ -87,8 +86,10 @@ nav svg {
 /* companies  +++++++++++++++++++++++++++++++++++++++++++++++++*/
 .companies {
   display: flex;
-  gap: 4rem;
-  margin: 2rem 5rem;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin: 2rem 4rem;
+  width: 45%;
 }
 
 .company-items {
@@ -117,8 +118,8 @@ nav svg {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
-  height: 300px;
   margin: 2rem 0;
   position: relative;
 }
@@ -224,7 +225,6 @@ nav svg {
   border: 3px solid white;
   background-color: white;
   border-radius: 50%;
-
 }
 
 div.blog-author {
@@ -248,6 +248,7 @@ div.blog-author {
   justify-content: space-evenly;
   align-items: flex-start;
   margin: 0 4rem;
+  padding: 1rem 0;
 }
 
 .faq-content h2 {
@@ -256,6 +257,7 @@ div.blog-author {
 
 .faq-content h4 {
   font-size: 14px;
+  margin: 10px 0;
 }
 
 .faq-content :nth-child(3) {
@@ -268,6 +270,7 @@ div.blog-author {
   color: #ffff;
   padding: 9px 20px;
   border-radius: 5px;
+  margin: 1rem 0;
 }
 
 .faq-image img {
@@ -373,4 +376,184 @@ div.blog-author {
 /* for first item of list left */
 .list .list-items:first-child::after {
   display: none;
+}
+
+
+/* ****** media queries ***** */
+
+@media screen and (max-width : 1280px) {
+  .header-image {
+    width: 620px;
+  }
+
+  .companies {
+    gap: 1rem;
+  }
+
+  .company-items {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.4rem;
+    font-family: "Righteous";
+  }
+}
+
+@media screen and (max-width : 1100px){
+  .faq-image img {
+    display: none;
+  }
+}
+
+@media screen and (max-width : 1024px) {
+    header {
+    padding: 0 1.5rem;
+  }
+
+  nav {
+    padding-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .logo {
+    position: absolute;
+    top: 1.5rem;
+    width: 100px;
+  }
+
+  .header-image {
+    position: static;
+    width: 100%;
+  }
+
+  .header-text {
+    height: auto;
+    width: 100%;
+  }
+
+  .header-image {
+    position: static;
+    width: 100%;
+  }
+
+  .download-section {
+    flex-direction: column;
+    height: unset;
+    margin: 1rem auto;
+  }
+
+  .download-email form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+    gap: 1rem
+  }
+
+  .download-email form input {
+    padding: 15px 40px 15px 40px;
+    width: 90vw;
+  }
+
+  .download-email form button {
+    position: static;
+    margin: 0 1rem;
+  }
+
+}
+
+@media screen and (max-width : 768px) {
+
+  h1,
+  h2,
+  h3 {
+    line-height: 3rem;
+  }
+  .companies {
+    align-items: center;
+    flex-wrap: nowrap;
+    width: unset;
+    gap: 1rem;
+    margin: 2rem 1.5rem;
+    width: unset;
+    justify-content: space-evenly;
+  }
+
+  .company-items {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .api {
+    margin: 0rem auto;
+  }
+
+  .api-heading {
+    text-align: center;
+  }
+
+  .cards {
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .card {
+    box-shadow: 1px 0 10px 1px rgba(0, 0, 0, 0.3);
+  }
+
+  /* arrow logo  */
+  .card:last-child::after {
+    display: none;
+  }
+
+  .blog-heading {
+    margin: 0 auto;
+  }
+
+  .blog-cards {
+    width: 90vw;
+    gap: 2.5rem;
+  }
+
+  .blog-card {
+    height: 650px;
+    flex-direction: column;
+  }
+
+  .blog-image img {
+    width: 100%;
+  }
+
+  .faq-section {
+    margin: 2rem 0;
+  }
+
+  .faq-content {
+    margin: 0 1.5rem;
+  }
+ 
+  .footer-section {
+    flex-direction: column;
+    height: auto;
+    padding: 1.5rem 0 0 0;
+  }
+
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .list {
+    width: 90vw;
+    margin: 1rem auto;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
